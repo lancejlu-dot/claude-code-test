@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/fraunces";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
+
+  --color-forest-950: #0e1d15;
+  --color-forest-900: #142a1d;
+  --color-forest-800: #1d3a28;
+  --color-forest-700: #284d35;
+  --color-forest-600: #366345;
+  --color-forest-500: #4a7d58;
+  --color-moss-400: #8bab78;
+  --color-moss-200: #cddcc2;
+  --color-moss-100: #e6eedf;
+  --color-moss-50: #f2f6ee;
+  --color-sand-50: #fbf9f4;
+  --color-sand-100: #f5f0e6;
+  --color-sand-200: #ebe3d3;
+  --color-sand-300: #dccfb7;
+  --color-sand-500: #a8977a;
+  --color-ember-700: #8f3f1c;
+  --color-ember-600: #b4532a;
+  --color-ember-500: #cf6a3d;
+  --color-ember-100: #f8e4d7;
+  --color-lake-700: #24566d;
+  --color-lake-600: #2f6b85;
+  --color-lake-100: #dceaf0;
+  --color-ink: #1c2420;
+  --color-muted: #5c6862;
+
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(20 42 29 / 0.06), 0 8px 24px -12px rgb(20 42 29 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(20 42 29 / 0.06), 0 18px 40px -16px rgb(20 42 29 / 0.28);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-sand-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-ember-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+@utility card {
+  @apply rounded-[var(--radius-card)] bg-white shadow-[var(--shadow-card)] ring-1 ring-forest-900/5;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+}
+@utility btn-primary {
+  @apply btn bg-forest-800 text-white hover:bg-forest-700 active:bg-forest-900;
+}
+@utility btn-accent {
+  @apply btn bg-ember-500 text-white hover:bg-ember-600;
+}
+@utility btn-secondary {
+  @apply btn bg-white text-forest-900 ring-1 ring-forest-900/15 hover:bg-sand-100;
+}
+@utility btn-ghost {
+  @apply btn text-forest-800 hover:bg-forest-900/5;
+}
+@utility btn-danger {
+  @apply btn bg-white text-ember-700 ring-1 ring-ember-600/30 hover:bg-ember-100;
+}
+@utility btn-sm {
+  @apply px-3.5 py-1.5 text-xs;
+}
+@utility input {
+  @apply block w-full rounded-xl border-0 bg-white px-3.5 py-2.5 text-[15px] text-ink shadow-sm ring-1 ring-forest-900/15 placeholder:text-muted/70 focus:ring-2 focus:ring-forest-600 focus:outline-none;
+}
+@utility label {
+  @apply mb-1.5 block text-sm font-medium text-forest-900;
+}
+@utility eyebrow {
+  @apply text-xs font-semibold tracking-[0.14em] text-ember-600 uppercase;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+}
+@utility prose-rl {
+  @apply max-w-none text-[15.5px] leading-7 text-ink/90;
+}
+
+@layer components {
+  .prose-rl h2 { @apply mt-8 mb-3 text-2xl text-forest-900; }
+  .prose-rl h3 { @apply mt-6 mb-2 text-lg text-forest-900; }
+  .prose-rl p { @apply my-3; }
+  .prose-rl ul { @apply my-3 list-disc space-y-1.5 pl-5; }
+  .prose-rl ol { @apply my-3 list-decimal space-y-1.5 pl-5; }
+  .prose-rl a { @apply font-medium text-lake-700 underline underline-offset-2; }
+  .prose-rl blockquote { @apply my-4 rounded-xl border-l-4 border-ember-500 bg-ember-100/50 px-4 py-3 text-sm; }
+  .prose-rl strong { @apply font-semibold text-forest-950; }
+}

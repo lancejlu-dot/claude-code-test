@@ -1,0 +1,560 @@
+{
+ "categories": [
+  {
+   "id": "45759b61-a548-4659-917a-6dce7fe37161",
+   "slug": "hiking",
+   "name": "Hiking",
+   "description": "Day hikes from forest loops to alpine summits.",
+   "icon": "mountain",
+   "hidden_fields": [],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 1
+  },
+  {
+   "id": "1c12abb7-7eac-4966-b249-6062504c39af",
+   "slug": "kayaking",
+   "name": "Kayaking",
+   "description": "Sea and lake paddling with experienced leads.",
+   "icon": "waves",
+   "hidden_fields": [
+    "elevation_gain_m"
+   ],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 2
+  },
+  {
+   "id": "7bfc9a26-7e39-4185-b2bd-a5e35979b4c6",
+   "slug": "paddleboarding",
+   "name": "Paddleboarding",
+   "description": "Calm-water SUP sessions and sunset paddles.",
+   "icon": "sailboat",
+   "hidden_fields": [
+    "elevation_gain_m"
+   ],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 3
+  },
+  {
+   "id": "e020ed92-066b-4783-99d1-66baf3eb4fd4",
+   "slug": "camping",
+   "name": "Camping",
+   "description": "Car-camping weekends at BC campgrounds.",
+   "icon": "tent",
+   "hidden_fields": [
+    "elevation_gain_m",
+    "group_pace",
+    "distance_km"
+   ],
+   "tracks_distance": false,
+   "active": true,
+   "sort_order": 4
+  },
+  {
+   "id": "6af507bb-cb0b-4f40-b045-c579a8356828",
+   "slug": "backpacking",
+   "name": "Backpacking",
+   "description": "Multi-day overnight trips into the backcountry.",
+   "icon": "backpack",
+   "hidden_fields": [],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 5
+  },
+  {
+   "id": "6d085e41-e233-45b3-9b83-d4c77ea02d01",
+   "slug": "snowshoeing",
+   "name": "Snowshoeing",
+   "description": "Winter trails on the North Shore and beyond.",
+   "icon": "snowflake",
+   "hidden_fields": [],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 6
+  },
+  {
+   "id": "72dbbc4b-b591-41ea-8d16-0ca5f48b9bbe",
+   "slug": "skiing-snowboarding",
+   "name": "Skiing & Snowboarding",
+   "description": "Resort days and carpools to the hill.",
+   "icon": "mountain-snow",
+   "hidden_fields": [
+    "distance_km",
+    "elevation_gain_m",
+    "group_pace"
+   ],
+   "tracks_distance": false,
+   "active": true,
+   "sort_order": 7
+  },
+  {
+   "id": "7cbf5522-32c5-47fd-bd30-435353ea3031",
+   "slug": "cycling",
+   "name": "Cycling",
+   "description": "Road and gravel rides around the Lower Mainland.",
+   "icon": "bike",
+   "hidden_fields": [],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 8
+  },
+  {
+   "id": "6d1a2d45-bfba-475c-a88b-6000760c3628",
+   "slug": "trail-running",
+   "name": "Trail Running",
+   "description": "Social trail runs with regroup points.",
+   "icon": "footprints",
+   "hidden_fields": [],
+   "tracks_distance": true,
+   "active": true,
+   "sort_order": 9
+  },
+  {
+   "id": "ac84e773-7443-4071-bbb3-33e254a475b9",
+   "slug": "outdoor-fitness",
+   "name": "Outdoor Fitness",
+   "description": "Park workouts, stair climbs and bootcamps.",
+   "icon": "dumbbell",
+   "hidden_fields": [
+    "elevation_gain_m",
+    "distance_km",
+    "transportation"
+   ],
+   "tracks_distance": false,
+   "active": true,
+   "sort_order": 10
+  },
+  {
+   "id": "d411e913-2e24-47cd-95d9-7ef4b9bbb218",
+   "slug": "road-trips",
+   "name": "Weekend Road Trips",
+   "description": "Weekend adventures beyond the city.",
+   "icon": "car",
+   "hidden_fields": [
+    "group_pace"
+   ],
+   "tracks_distance": false,
+   "active": true,
+   "sort_order": 11
+  },
+  {
+   "id": "dd777cc0-9547-4cb9-903b-a58fe15ac932",
+   "slug": "social",
+   "name": "Community Socials",
+   "description": "Post-hike patios, potlucks and gear swaps.",
+   "icon": "users",
+   "hidden_fields": [
+    "distance_km",
+    "elevation_gain_m",
+    "group_pace",
+    "required_equipment",
+    "recommended_equipment",
+    "food_water",
+    "weather_considerations"
+   ],
+   "tracks_distance": false,
+   "active": true,
+   "sort_order": 12
+  }
+ ],
+ "regions": [
+  {
+   "id": "00000000-0000-4000-a000-000000000001",
+   "parent_id": null,
+   "kind": "country",
+   "name": "Canada",
+   "slug": "canada",
+   "active": true,
+   "sort_order": 0
+  },
+  {
+   "id": "00000000-0000-4000-a000-000000000002",
+   "parent_id": "00000000-0000-4000-a000-000000000001",
+   "kind": "province",
+   "name": "British Columbia",
+   "slug": "british-columbia",
+   "active": true,
+   "sort_order": 0
+  },
+  {
+   "id": "5e4c7fcb-0036-47d4-a047-2be94b6f63da",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Vancouver",
+   "slug": "vancouver",
+   "active": true,
+   "sort_order": 1
+  },
+  {
+   "id": "bebe1919-b435-4a1f-a1ff-419507868959",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "North Vancouver",
+   "slug": "north-vancouver",
+   "active": true,
+   "sort_order": 2
+  },
+  {
+   "id": "2f9fa616-863e-483e-97ec-a458f74d41d9",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "West Vancouver",
+   "slug": "west-vancouver",
+   "active": true,
+   "sort_order": 3
+  },
+  {
+   "id": "72ef3e5b-d404-484a-a1cb-18219338339c",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Burnaby",
+   "slug": "burnaby",
+   "active": true,
+   "sort_order": 4
+  },
+  {
+   "id": "9f230aaf-b1a5-4db9-aaad-de0704aba30c",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Coquitlam",
+   "slug": "coquitlam",
+   "active": true,
+   "sort_order": 5
+  },
+  {
+   "id": "a289db71-1119-4809-8207-44005d53bac8",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Port Moody",
+   "slug": "port-moody",
+   "active": true,
+   "sort_order": 6
+  },
+  {
+   "id": "6c6126da-dbc2-433c-8378-47213c2ab729",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Surrey",
+   "slug": "surrey",
+   "active": true,
+   "sort_order": 7
+  },
+  {
+   "id": "ab147ee5-f322-4a40-ba97-d883727dd124",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Richmond",
+   "slug": "richmond",
+   "active": true,
+   "sort_order": 8
+  },
+  {
+   "id": "68d93f49-b934-476b-8aa9-d672f4c126da",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Maple Ridge",
+   "slug": "maple-ridge",
+   "active": true,
+   "sort_order": 9
+  },
+  {
+   "id": "856417af-01d8-4b0c-9b8c-d69a1bf9c84b",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Langley",
+   "slug": "langley",
+   "active": true,
+   "sort_order": 10
+  },
+  {
+   "id": "8049279a-7585-400c-b147-04fbc683310d",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Fraser Valley",
+   "slug": "fraser-valley",
+   "active": true,
+   "sort_order": 11
+  },
+  {
+   "id": "2eca4459-0795-46ad-b859-67cdbc1a77e9",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Squamish & Sea-to-Sky",
+   "slug": "squamish-sea-to-sky",
+   "active": true,
+   "sort_order": 12
+  },
+  {
+   "id": "d8619f84-91cc-456a-965b-1b4a03fad22c",
+   "parent_id": "00000000-0000-4000-a000-000000000002",
+   "kind": "area",
+   "name": "Whistler",
+   "slug": "whistler",
+   "active": true,
+   "sort_order": 13
+  }
+ ],
+ "faqs": [
+  {
+   "id": "df9863f9-12a5-4ae5-befa-2c5e9d64c6c5",
+   "category": "Joining",
+   "question": "How do I join?",
+   "answer": "Create an account with your contact details, an emergency contact and a short introduction. An administrator reviews every new member, usually within two days. Once approved you can apply for activities.",
+   "sort_order": 1,
+   "published": true,
+   "show_on_home": true
+  },
+  {
+   "id": "ed9712c2-7091-4659-97dd-41cb610254dc",
+   "category": "Activities",
+   "question": "How do event applications work?",
+   "answer": "Each activity has an application. You answer a few event-specific questions and confirm your equipment. Organizers select participants after reviewing applications, then selected members sign the waiver, pay if needed, and confirm attendance. Applying does not guarantee a place.",
+   "sort_order": 2,
+   "published": true,
+   "show_on_home": true
+  },
+  {
+   "id": "952129cf-7248-44eb-8fd4-c3b11c5706fe",
+   "category": "Activities",
+   "question": "Why does participation require approval?",
+   "answer": "Selection keeps groups safe and balanced. Organizers consider experience relative to the difficulty, reliability, equipment readiness, answers to event questions and fair rotation so that more members get a turn. We never select based on appearance or any characteristic protected under the BC Human Rights Code.",
+   "sort_order": 3,
+   "published": true,
+   "show_on_home": true
+  },
+  {
+   "id": "672308c1-c36b-4f2e-a77d-0e27e174f025",
+   "category": "Activities",
+   "question": "What fitness and experience do I need?",
+   "answer": "Every event lists the required experience, minimum fitness expectations, distance, elevation gain and expected pace. Choose activities that match what you can comfortably do today — there is always another trip to build up to.",
+   "sort_order": 4,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "5c3d3ab3-d389-4c0d-b0cd-bedfd2a4c0ce",
+   "category": "Activities",
+   "question": "How are difficulty levels defined?",
+   "answer": "**Easy** – under 8 km, under 300 m gain, well-maintained trails.\n**Moderate** – 8–14 km or 300–800 m gain; steady fitness required.\n**Challenging** – 14–20 km or 800–1,200 m gain; prior hiking experience required.\n**Strenuous** – long days over 1,200 m gain or rough terrain.\n**Expert** – technical terrain, scrambling or winter alpine travel; experience and specialised gear required.",
+   "sort_order": 5,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "41d0ee6b-54a6-4ead-a962-326ba534cbea",
+   "category": "Payments",
+   "question": "What payment methods are accepted?",
+   "answer": "Each event shows which methods are allowed: secure online card payment (processed by Stripe — we never see or store your card number), cash on the day, or no payment for free events. You are only asked to pay after you are selected.",
+   "sort_order": 6,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "823a3e1c-fc93-4b06-858c-f4b2c7b2b6aa",
+   "category": "Payments",
+   "question": "What is the cancellation and refund policy?",
+   "answer": "You can cancel from your dashboard. Cancelling before the event's cancellation deadline is free and paid fees are refunded per the event's policy. Late cancellations are recorded and may not be refunded. If we cancel an event (including for weather), you receive a full refund.",
+   "sort_order": 7,
+   "published": true,
+   "show_on_home": true
+  },
+  {
+   "id": "04b42429-1063-4504-810e-a51073376e0d",
+   "category": "Attendance",
+   "question": "What is the no-show policy?",
+   "answer": "If you are confirmed and do not attend without cancelling, your booking privileges are paused automatically once an administrator confirms the no-show. You can submit an explanation from your account and we review every one. Emergencies and safety-related withdrawals are not penalised.",
+   "sort_order": 8,
+   "published": true,
+   "show_on_home": true
+  },
+  {
+   "id": "89d09f1f-6e77-4721-b7fd-62d53dce7a97",
+   "category": "Safety",
+   "question": "Why do I need to sign waivers?",
+   "answer": "Waivers explain the risks of each activity and your responsibilities. You sign electronically before your place is confirmed. If the terms change, you will be asked to re-sign.",
+   "sort_order": 9,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "9e0f42f2-1b23-4d79-ae0e-a86364906bab",
+   "category": "Safety",
+   "question": "What happens in an emergency?",
+   "answer": "Organizers carry a first-aid kit and have authorised access to participants' emergency contacts for their events. Call 911 first in any emergency. Organizers take headcounts at key points and confirm everyone has safely completed or left the activity.",
+   "sort_order": 10,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "98ff4c75-d98f-4c9f-8623-b91a00cfadb6",
+   "category": "Activities",
+   "question": "What equipment do I need?",
+   "answer": "Each event lists required and recommended equipment. For most hikes that means the Ten Essentials: navigation, headlamp, sun protection, first aid, knife, fire starter, emergency shelter, extra food, extra water and extra clothes. Organizers may turn away participants without required gear.",
+   "sort_order": 11,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "17c11ffc-27d2-4a9e-850c-fc424091d5d7",
+   "category": "Activities",
+   "question": "How does carpooling work?",
+   "answer": "Confirmed participants can offer or request seats on the event page. Drivers set the number of seats and a general departure area. We recommend riders contribute fairly to fuel costs.",
+   "sort_order": 12,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "03b1e8db-786c-416f-8988-6aee4d94d2be",
+   "category": "Community",
+   "question": "What are the community expectations?",
+   "answer": "Be on time, be prepared, be kind, leave no trace, and look after each other. Read the full community guidelines and code of conduct before your first trip.",
+   "sort_order": 13,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "c1d68da0-40e5-49b5-8f74-cb4abe3598b3",
+   "category": "Privacy",
+   "question": "How is my personal information handled?",
+   "answer": "Other members only see your first name, last initial, optional photo, short intro, interests and selected experience. Your phone number, email and emergency contact are never shown to other members. Organizers can view emergency contacts only for confirmed participants of their own events, and every view is logged.",
+   "sort_order": 14,
+   "published": true,
+   "show_on_home": false
+  },
+  {
+   "id": "5cf4daf9-814b-4395-917c-626047d52e59",
+   "category": "Community",
+   "question": "How can I become an event organizer?",
+   "answer": "After you have attended several activities reliably, let us know through an activity suggestion with \"willing to help organize\" ticked, or contact the community team. New organizers co-lead with an experienced organizer first.",
+   "sort_order": 15,
+   "published": true,
+   "show_on_home": false
+  }
+ ],
+ "policies": [
+  {
+   "slug": "community-guidelines",
+   "title": "Community Guidelines",
+   "summary": "How we look after each other and the places we visit.",
+   "body": "Our community works because members show up prepared, look out for one another and treat every place we visit with respect.\n\n## Show up\n- Only apply for activities you intend to attend and are prepared for.\n- Confirm on time, arrive on time, and cancel through your dashboard as early as possible if plans change.\n\n## Be prepared\n- Read the full event description, bring all required equipment and enough food and water.\n- Be honest about your experience and fitness. Organizers rely on it to keep the group safe.\n\n## Look after each other\n- Stay with the group or follow agreed regroup points. Never leave anyone behind.\n- Organizers have final say on route, pace, turnaround times and participation.\n\n## Respect the outdoors\n- Follow Leave No Trace principles. Pack out everything you bring in.\n- Respect closures, private land, wildlife and Indigenous territories. Many of our activities take place on the traditional, ancestral and unceded territories of the Coast Salish peoples, including the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish) and səl̓ilwətaɬ (Tsleil-Waututh) Nations.\n\n## Keep it a community, not a dating app\n- No unsolicited romantic or sexual advances, no pressure to share contact details.\n- Don't share other members' photos or information without their consent.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 1,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "code-of-conduct",
+   "title": "Code of Conduct",
+   "summary": "Behaviour we expect, and what happens when it falls short.",
+   "body": "All members, organizers and administrators agree to this code.\n\n## Expected behaviour\n- Treat everyone with respect regardless of background, identity, ability, age or experience.\n- Communicate kindly and constructively in event discussions.\n- Follow organizer safety instructions.\n\n## Unacceptable behaviour\n- Harassment, intimidation, discrimination or hate speech.\n- Unwanted physical contact, sexual comments or advances.\n- Being under the influence of alcohol or drugs during an activity in a way that affects safety.\n- Recording or photographing members who have asked not to be photographed.\n- Repeated unreliable attendance.\n\n## Enforcement\nDepending on severity, administrators may issue a private warning, restrict booking privileges, suspend, or permanently remove a member. Serious safety matters may be reported to the authorities. Decisions are communicated privately; members can appeal through their account.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 2,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "privacy-policy",
+   "title": "Privacy Policy",
+   "summary": "What we collect, why, and how we protect it.",
+   "body": "**DRAFT — must be reviewed for compliance with BC's Personal Information Protection Act (PIPA) and, where applicable, PIPEDA before launch.**\n\n## What we collect\n- **Account information:** name, email, phone number, emergency contact, a short introduction.\n- **Optional profile information:** interests, general city, experience, fitness self-assessment, availability, languages, vehicle access and carpool preferences, skills and certifications, profile photo.\n- **Activity records:** applications, answers to event questions, attendance, waiver signatures (with time, IP address and device information), payments (processed by Stripe — we never store card numbers).\n\n## Why we collect it\nTo operate the community: review membership, select participants, keep groups safe, contact you about activities, reach your emergency contact if needed, process payments and maintain required records.\n\n## Who can see it\n- **Other members:** first name, last initial, optional photo, intro, interests, selected experience, completed-activity count, membership duration and badges.\n- **Organizers:** your application and, for events you are confirmed for, your emergency contact (every access is logged).\n- **Administrators:** your full account for membership and safety administration.\n- **Service providers:** Supabase (database hosting), Stripe (payments), Resend (email) and Vercel (hosting), under their own privacy terms. Data may be stored outside Canada.\n\n## Retention\nWe keep records only as long as needed. Waiver and payment records are retained for legal and accounting purposes even after account deletion, detached from your contact information. Retention periods are set by the owner and listed in the admin settings.\n\n## Your choices\nYou can update your profile, download your data and delete your account at any time from your account page. Contact us for any privacy question.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 3,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "terms-of-use",
+   "title": "Terms of Use",
+   "summary": "The rules for using this website.",
+   "body": "**DRAFT — legal review required.**\n\n1. You must be at least 18 years old to create an account.\n2. You are responsible for the accuracy of the information you provide.\n3. Membership and participation are at the discretion of the administrators, applied consistently with our published policies.\n4. You may not use the platform to advertise, solicit, harass or collect other members' information.\n5. Activities are organized by volunteers and involve inherent risks described in the waivers.\n6. We may update these terms; material changes will be announced and may require re-acceptance.\n7. These terms are governed by the laws of British Columbia.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 4,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "cancellation-refund-policy",
+   "title": "Cancellation & Refund Policy",
+   "summary": "How cancellations and refunds work.",
+   "body": "**DRAFT — review before launch.**\n\n## If you cancel\n- Cancel from your dashboard as early as possible so someone on the waitlist can take your place.\n- **Before the event's cancellation deadline** (shown on every event; default 48 hours before start): no penalty. Paid fees are refunded unless the event says otherwise.\n- **After the deadline:** recorded as a late cancellation. Fees and deposits may not be refunded.\n- **Safety or emergency withdrawals** are never penalised. Let your organizer know.\n\n## If we cancel\nIf an event is cancelled by organizers — including for weather or unsafe conditions — you receive a full refund of any fee or deposit, and it never counts against you.\n\n## Refund method\nOnline payments are refunded to the original card (5–10 business days). Cash payments are refunded in cash or by e-transfer.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 5,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "attendance-policy",
+   "title": "Attendance Policy",
+   "summary": "Why reliability matters and how no-shows are handled.",
+   "body": "Small groups depend on every confirmed member. A no-show can mean a waitlisted member missed out, carpools fall apart or a group goes out short of an experienced member.\n\n## Outcomes we record\n- **Attended**\n- **Cancelled within the permitted period** – no effect on your standing\n- **Late cancellation** – recorded; repeated late cancellations may affect future selection\n- **Excused absence** – emergencies, illness and safety withdrawals\n- **Unexcused no-show** – confirmed, did not attend, did not cancel\n\n## What happens after a no-show\nWhen an administrator confirms an unexcused no-show, your ability to apply for new activities is paused automatically. You can submit an explanation from your account standing page. An administrator reviews it and can restore your privileges, sometimes with a reminder of this policy. Repeated no-shows may lead to suspension.\n\nEvents cancelled by organizers, organizer mistakes and legitimate emergencies never count against you.\n\n## Selection fairness\nSelection uses activity-related criteria only: experience for the difficulty, attendance reliability, equipment readiness, answers to event questions, group balance for safety and fair rotation.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 6,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "outdoor-safety-policy",
+   "title": "Outdoor Safety Policy",
+   "summary": "Our safety standards for every activity.",
+   "body": "- Every event has a difficulty rating, turnaround time guidance and required equipment list.\n- Organizers check weather, avalanche (avalanche.ca) and trail conditions before departure and may postpone, alter or cancel.\n- Organizers carry a first-aid kit and a means of emergency communication where coverage is limited.\n- A trip plan is left with a responsible person (see AdventureSmart.ca).\n- Headcounts are taken at the start, at key points and at the finish; organizers confirm each participant has safely completed or departed.\n- Participants may not continue beyond an organizer's turnaround decision.\n- Incidents are recorded and reviewed by administrators.\n- In an emergency, call 911. Search and rescue in BC is free to the public — call early.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 7,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "harassment-reporting",
+   "title": "Harassment & Misconduct Reporting",
+   "summary": "How to report a concern privately.",
+   "body": "If something made you feel unsafe or uncomfortable, please tell us. You can report:\n- From any event page or discussion post using **Report**\n- Through the private **Report a concern** form in your account\n\nReports are visible only to moderators and administrators. We never reveal who made a report to the member being reported. We will acknowledge your report, look into it, and take action consistent with the Code of Conduct.\n\n**If you are in immediate danger, call 911.**",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 8,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  },
+  {
+   "slug": "photo-media-consent",
+   "title": "Photo & Media Consent",
+   "summary": "How photos are taken and shared.",
+   "body": "- You choose in your account whether you consent to appearing in community photos shared on the website.\n- Organizers will ask the group before taking group photos. Tell your organizer if you prefer not to be photographed.\n- Highlights are published only after an administrator confirms everyone pictured has consented.\n- You can ask us to remove any photo of you at any time.",
+   "legal_reviewed": false,
+   "published": true,
+   "sort_order": 9,
+   "updated_at": "2026-11-26T01:47:47.059834+00:00"
+  }
+ ],
+ "settings": {
+  "brand": {
+   "name": "Ridgeline Collective",
+   "tagline": "Outdoor adventures with people who show up.",
+   "region_label": "Lower Mainland, BC",
+   "contact_email": "hello@example.com"
+  },
+  "homepage": {
+   "values": [
+    {
+     "body": "We select participants for each trip so groups are balanced, prepared and committed.",
+     "title": "Reliable by design"
+    },
+    {
+     "body": "Clear difficulty ratings, waivers, headcounts and organizers trained to make the call.",
+     "title": "Safety first"
+    },
+    {
+     "body": "Beginners are welcome on beginner trips. Everyone earns their way to bigger days.",
+     "title": "Welcoming, not exclusive"
+    },
+    {
+     "body": "No follower counts, no public phone numbers, no unsolicited DMs.",
+     "title": "Privacy respected"
+    }
+   ],
+   "hero_title": "Find your people on the trail.",
+   "hero_subtitle": "A curated outdoor community for the Lower Mainland. Small groups, experienced organizers, and members who show up.",
+   "hero_image_url": "/images/hero.svg",
+   "stats_override": {}
+  }
+ }
+}
